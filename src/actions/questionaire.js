@@ -1,4 +1,4 @@
-import {ADD_NAME} from './types'
+import {ADD_NAME, ADD_CHILD, UPDATE_CHILD} from './types'
 
 export function addName (name) {
   return dispatch => {
@@ -6,5 +6,27 @@ export function addName (name) {
       type: ADD_NAME,
       name: name
     })
+  }
+}
+
+export function addChild() {
+  return dispatch => {
+    dispatch(
+      {
+        type: ADD_CHILD
+      }
+    )
+  }
+}
+
+export function updateChild(id, name) {
+  return dispatch => {
+    dispatch(
+      {
+        type: UPDATE_CHILD,
+        name: name,
+        id: id
+      }
+    )
   }
 }

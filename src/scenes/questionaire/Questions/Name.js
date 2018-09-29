@@ -27,6 +27,7 @@ class Name extends Component {
     this.setState({
       show:false
     })
+    this.props.addName(this.state.value)
     if (this.props.callBack) {
       setTimeout(() => {
         this.props.callBack(this.state.value)

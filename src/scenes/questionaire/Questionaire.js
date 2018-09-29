@@ -22,12 +22,18 @@ class Questionaire extends Component {
     }) 
   }
 
+  _handleAddChildDetail = () => {
+    this.setState({
+      stateNum: 2
+    })
+  }
+
   render() {
     const stateFlow = [
       <Name callBack={this._handleCallBack}/>,
       <Location callBack={this._handleCallBack}/>,
       <AddChild callBack={this._handleCallBack}/>,
-      <ChildDetail callBack={this._handleCallBack}/>,
+      <ChildDetail callBack={this._handleAddChildDetail}/>,
     ]
     return <div className="questionaire-wrapper">
       <div className="logo">

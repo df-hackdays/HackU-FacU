@@ -44,7 +44,8 @@ class Location extends Component {
     return (
       <div className={className}>
         <h1>What is your Location?</h1>
-        <input className="text-box" type="text" id="display-name" name="ip-display" placeholder="Location" value={this.state.value} onChange={this._onValueChange} required />
+        <input className="text-box" type="text" id="display-name" name="ip-display" placeholder="Location" 
+          value={this.state.value} onChange={this._onValueChange} required />
         <CallToAction label="Next" onClick={this._handleClick}/>
       </div>
     )

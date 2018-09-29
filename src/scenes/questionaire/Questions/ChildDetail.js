@@ -42,8 +42,6 @@ class ChildDetail extends Component {
           <option value="Boy">Boy</option>
           <option value="Girl">Girl</option>
         </select>
-        
-        
         <CallToAction label="Next" onClick={this._handleClick}/>
       </div>
     )
