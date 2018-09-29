@@ -11,6 +11,7 @@ class NavBar extends Component {
       </div>
       <ul className="nav-list">
         <li><Link to='/'>GUARDIAN</Link></li>
+        <li><Link to='/dashboard'>DASHBOARD</Link></li>
         <li><a href='https://www.canadalearningcode.ca/'>LEARN</a></li>
         <li><a href='https://www.canadalearningcode.ca/'>TEACH</a></li>
         <li><a href='https://www.canadalearningcode.ca/'>VOLUNTEER</a></li>
