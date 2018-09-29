@@ -8,6 +8,7 @@ import Charlie from './scenes/dashboard/charlie'
 import Mary from './scenes/dashboard/mary'
 import './App.css';
 import Questionaire from './scenes/questionaire/Questionaire';
+import Thankyou from './scenes/questionaire/Thankyou';
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <Route path="/dashboard" component={Dashboard}/>
           <Route path="/charlie" component={Charlie}/>
           <Route path="/mary" component={Mary}/>
+          <Route path='/Thankyou' component={Thankyou} />
         </Switch>
       </HashRouter>
     );

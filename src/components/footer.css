@@ -1,0 +1,114 @@
+/*! CSS Used from: https://www.canadalearningcode.ca/wp-content/themes/twg/style.min.css?ver=4.9.8 ; media=all */
+@media all{
+  *,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+  img{display:block;max-width:100%;height:auto;}
+  .grid{font-size:0;margin-left:-2rem;}
+  .grid>*{padding-left:2rem;font-size:1.6rem;vertical-align:top;display:inline-block;}
+  .grid--middle>*{vertical-align:middle;}
+  .grid-1of3{width:33.33333%;}
+  .grid-2of3{width:66.66667%;}
+  .grid-5of12{width:41.66667%;}
+  .grid-7of12{width:58.33333%;}
+  @media (max-width:600px){
+  .grid-1of1--phablet{width:100%;}
+  }
+  @media (max-width:480px){
+  .grid-1of1--palm{width:100%;}
+  }
+  @media (max-width:480px){
+  .grid-1of2--palm{width:50%;}
+  }
+  .combo{display:table;width:100%;}
+  .combo>.combo-first{width:0;white-space:nowrap;padding-right:2rem;}
+  .combo>.combo-last{width:100%;}
+  .combo-first,.combo-last{display:table-cell;vertical-align:top;}
+  .combo--rev>.combo-first{width:100%;white-space:normal;padding-right:0;}
+  .combo--rev>.combo-last{width:0;white-space:nowrap;padding-left:2rem;}
+  .combo--middle>.combo-first,.combo--middle>.combo-last{vertical-align:middle;}
+  @media (max-width:1023px){
+  .combo--stack--portable{display:block;}
+  .combo--stack--portable>.combo-first,.combo--stack--portable>.combo-last{display:block;width:auto;padding:0;}
+  }
+  @media (max-width:600px){
+  .combo--stack--phablet{display:block;}
+  .combo--stack--phablet>.combo-first,.combo--stack--phablet>.combo-last{display:block;width:auto;padding:0;}
+  }
+  h2,p{margin:0;line-height:1.13;}
+  h2{font-size:4rem;font-weight:700;}
+  p{font-size:1.6rem;line-height:1.5;}
+  .u-marginBottomSmall{margin-bottom:2rem;}
+  @media (max-width:600px){
+  .u-marginBottomSmall--phablet{margin-bottom:2rem;}
+  }
+  .sticky-footer{-ms-flex-negative:0;flex-shrink:0;}
+  input{-webkit-appearance:none;border-radius:0;}
+  .container{max-width:1440px;margin:0 auto;width:90%;}
+  .container--tight{max-width:1200px;}
+  input[type=submit]{-webkit-appearance:none;display:inline-block;padding:1.5rem 3.5rem;background:#ef0919;color:#fff;border:2px solid #ef0919;border-radius:25px;font-size:1.3rem;font-weight:700;line-height:1.25;letter-spacing:2px;text-transform:uppercase;text-decoration:none;text-align:center;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;cursor:pointer;}
+  input:hover[type=submit]{background:#7f0d1b;border:2px solid #7f0d1b;color:#fff;}
+  input{width:100%;max-width:360px;padding:8px;font-size:2rem;font-family:Maax,"Open Sans",sans-serif;background-color:transparent;color:#565656;border:none;border-bottom:1px solid #565656;display:block;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+  input:focus,input:hover{outline:0;border-color:#8af9f3;}
+  label{font-size:13px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase;color:#107e7a;position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-transform-origin:top left;transform-origin:top left;-webkit-transition:all .15s ease-in-out;transition:all .15s ease-in-out;}
+  input[type=submit]{width:auto;}
+  .input{position:relative;margin-top:2rem;}
+  .footer{margin:0;padding:0;background:#fff;}
+  .footer-top{padding:3rem 0 9rem;border-top:1px solid #e1e1e1;}
+  .footer-top .menu{list-style-type:none;-webkit-column-count:2;column-count:2;padding:0;margin:0;}
+  .footer-top .menu a{color:#232323;font-size:1.5rem;text-decoration:none;display:block;padding:0;margin-bottom:1.2rem;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+  .footer-top .menu a:hover{color:#ef0919;}
+  .footer-social{list-style-type:none;padding:0;margin:0;}
+  .footer-social li{margin-bottom:1.2rem;vertical-align:middle;}
+  .footer-social img{display:inline-block;width:15px;margin-right:1.4rem;vertical-align:middle;}
+  .footer-social a{display:block;color:#232323;font-size:1.5rem;text-decoration:none;vertical-align:middle;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+  .footer-social a:focus,.footer-social a:hover{color:#ef0919;}
+  .footer-bottom{padding:1.7rem 0;background-color:#fafcfb;}
+  .footer-bottom .menu{list-style-type:none;padding:0;margin:0;}
+  .footer-bottom .menu li{display:inline-block;margin-right:4.5rem;}
+  .footer-bottom .menu li:last-of-type{margin-right:0;}
+  .footer-bottom .menu a{display:block;padding:0;margin:0;color:#232323;font-size:1.3rem;text-decoration:none;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+  .footer-bottom .menu a:hover{color:#ef0919;}
+  .footer-copy,.footer-copyright{max-width:50%;margin:0;color:#232323;font-size:1.1rem;line-height:1.64;letter-spacing:1.7px;text-transform:uppercase;}
+  @media (max-width:480px){
+  .footer{padding:40px 0 0;}
+  .footer-top{padding:30px 0 50px;}
+  .footer-top .menu{text-align:center;margin-bottom:30px;-webkit-column-count:1;column-count:1;}
+  .footer-logo{margin:0 auto 50px;}
+  .footer-social{text-align:center;}
+  .footer-bottom{padding:30px 0;}
+  .footer-bottom .menu{text-align:center;}
+  .footer-bottom .menu li{display:block;margin-right:0;margin-bottom:1.2rem;}
+  .footer-copy,.footer-copyright{max-width:none;text-align:center;margin-bottom:10px;font-size: 20px;}
+  }
+  .newsletter{margin:12rem 0 0;padding:12rem 0;background-image:url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/images/newsletter-bg-wave.svg);background-size:cover;background-repeat:no-repeat;background-position:top center;position:relative;}
+  .newsletter::before{content:"";width:100%;height:12rem;background:-webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0)),to(white));background:linear-gradient(rgba(255,255,255,0),#fff);position:absolute;left:0;bottom:0;}
+  .newsletter-info{width:40%;}
+  .newsletter-info h2{color:#107e7a;}
+  .newsletter .grid{margin-left:-4rem;}
+  .newsletter .grid>*{padding-left:4rem;}
+  .newsletter .combo-last{padding-left:4rem;}
+  @media (max-width:600px){
+  .newsletter{margin:50px 0 0;padding-top:50px;}
+  .newsletter::before{display:none;}
+  .newsletter-info{width:100%;}
+  .newsletter .combo-last{padding:0;}
+  }
+  }
+  /*! CSS Used fontfaces */
+  @font-face{font-family:Maax;src:url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/regular/regular.woff2) format("woff2"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/regular/regular.woff) format("woff"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/regular/regular.ttf) format("truetype");font-weight:400;font-style:normal;}
+  @font-face{font-family:Maax;src:url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/bold/bold.woff2) format("woff2"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/bold/bold.woff) format("woff"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/bold/bold.ttf) format("truetype");font-weight:700;font-style:normal;}
+  @font-face{font-family:Maax;src:url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/italic/italic.woff2) format("woff2"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/italic/italic.woff) format("woff"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/italic/italic.ttf) format("truetype");font-weight:400;font-style:italic;}
+  @font-face{font-family:Maax;src:url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/boldItalic/boldItalic.woff2) format("woff2"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/boldItalic/boldItalic.woff) format("woff"),url(https://www.canadalearningcode.ca/wp-content/themes/twg/src/fonts/maax/boldItalic/boldItalic.ttf) format("truetype");font-weight:600;font-style:italic;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWJ0bf8pkAp6a.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFUZ0bf8pkAp6a.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWZ0bf8pkAp6a.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVp0bf8pkAp6a.woff2) format('woff2');unicode-range:U+0370-03FF;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFWp0bf8pkAp6a.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFW50bf8pkAp6a.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0bf8pkAg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOX-hpKKSTj5PW.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOVuhpKKSTj5PW.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXuhpKKSTj5PW.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUehpKKSTj5PW.woff2) format('woff2');unicode-range:U+0370-03FF;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXehpKKSTj5PW.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOXOhpKKSTj5PW.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+  @font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhpKKSTjw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
