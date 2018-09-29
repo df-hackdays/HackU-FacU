@@ -4,7 +4,7 @@ import './questionaire.css'
 import AddChild from './Questions/AddChild';
 import ChildDetail from './Questions/ChildDetail';
 import Location from './Questions/Location';
-import EventSelection from './Questions/EventSelection';
+// import EventSelection from './Questions/EventSelection';
 
 
 class Questionaire extends Component {
@@ -35,7 +35,7 @@ class Questionaire extends Component {
       <Location callBack={this._handleCallBack}/>,
       <AddChild callBack={this._handleCallBack}/>,
       <ChildDetail callBack={this._handleAddChildDetail}/>,
-      <EventSelection callBack={this._handleCallBack}/>,
+      // <EventSelection callBack={this._handleCallBack}/>,
     ]
     return <div className="questionaire-wrapper">
       <div className="logo">
