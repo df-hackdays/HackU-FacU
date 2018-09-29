@@ -25,7 +25,7 @@ class Child extends Component {
         <ul className="check-marks">
         <li>
             <img className='checkmarks' src='/images/Checkmark.png' alt='Checkmark icon'/>
-            <p>Introduction to Scracth's online community</p>
+            <p>Introduction to Scratch's online community</p>
           </li>
           <li>
             <img className='checkmarks' src='/images/Checkmark.png' alt='Checkmark icon'/>
@@ -51,12 +51,12 @@ class Child extends Component {
         </div>
         
         <div className='eventGoal'>
-          Scratch help young people learn to <br />
+          Canada Learning Code helps young people learn to <br />
           think creatively, reason systematically,<br/>
           and work collaboratively.
         </div>
         <button className='scratch-link' >
-          <a href='https://scratch.mit.edu/' target='_blank'>Learn More about Scracth </a>
+          <a href='https://www.canadalearningcode.ca/our-chapters/' target='_blank'>Learn More about CLC Workshops </a>
         </button>
       </div>
     )
