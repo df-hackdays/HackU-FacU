@@ -34,12 +34,20 @@ class Name extends Component {
     }
   }
 
+  _onValueChange = (e) => {
+    this.setState(
+      {
+        value: e.target.value
+      }
+    )
+  }
+
   render () {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
         <h1>What is your name?</h1>
-        <input className="text-box" type="text" id="display-name" name="ip-display" placeholder="Name" required />
+        <input className="text-box" type="text" id="display-name" name="ip-display" placeholder="Name" value={this.state.value} onChange={this._onValueChange} required />
         <CallToAction label="Next" onClick={this._handleClick}/>
       </div>
     )
