@@ -1,7 +1,8 @@
-import React, {Component} from 'react'
-import CallToAction from '../../../components/buttons/CallToActionOnPress'
+import React, { Component, Anim } from 'react'
+import './questions.css'
+import CallToAction from '../../../components/buttons/CallToActionOnPress';
 
-class AddChild extends Component {
+class Location extends Component {
   constructor(props) {
     super(props)
 
@@ -34,11 +35,12 @@ class AddChild extends Component {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
-        <h1>There is currently no progress tracking on your child</h1>
-        <CallToAction label="Add Child" onClick={this._handleClick}/>
+        <h1>What is your Location?</h1>
+        <input type="text" id="display-name" name="ip-display" placeholder="Location" required />
+        <CallToAction label="Next" onClick={this._handleClick}/>
       </div>
     )
   }
 }
 
-export default AddChild
+export default Location

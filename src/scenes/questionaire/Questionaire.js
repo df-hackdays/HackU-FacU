@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Name from './Questions/Name'
 import './questionaire.css'
 import AddChild from './Questions/AddChild';
+import ChildDetail from './Questions/ChildDetail';
+import Location from './Questions/Location';
 
 
 class Questionaire extends Component {
@@ -14,7 +16,7 @@ class Questionaire extends Component {
   }
 
   _handleCallBack = () => {
-    let item = (this.state.stateNum + 1) % 2
+    let item = (this.state.stateNum + 1) % 4
     this.setState({
       stateNum: item
     }) 
@@ -23,7 +25,9 @@ class Questionaire extends Component {
   render() {
     const stateFlow = [
       <Name callBack={this._handleCallBack}/>,
-      <AddChild callBack={this._handleCallBack}/>
+      <Location callBack={this._handleCallBack}/>,
+      <AddChild callBack={this._handleCallBack}/>,
+      <ChildDetail callBack={this._handleCallBack}/>,
     ]
     return <div className="questionaire-wrapper">
       <div className="logo">
