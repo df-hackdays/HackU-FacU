@@ -7,7 +7,7 @@ class NavBar extends Component {
     return <header className="nav-wrapper container">
     <div className="nav-bar row col-md-12">
       <div className="nav-logo">
-        <img class="siteNav-logo" src="https://www.canadalearningcode.ca/wp-content/uploads/clc-logo-1.svg" alt="clc logo"/>
+        <img className="siteNav-logo" src="https://www.canadalearningcode.ca/wp-content/uploads/clc-logo-1.svg" alt="clc logo"/>
       </div>
       <ul className="nav-list">
         <li><Link to='/'>GUARDIAN</Link></li>

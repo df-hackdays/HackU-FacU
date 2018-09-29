@@ -1,6 +1,9 @@
 import React, { Component, Anim } from 'react'
 import './questions.css'
 import CallToAction from '../../../components/buttons/CallToActionOnPress';
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import {addName} from '../../../actions/questionaire'
 
 class Name extends Component {
   constructor(props) {
@@ -36,11 +39,17 @@ class Name extends Component {
     return (
       <div className={className}>
         <h1>What is your name?</h1>
-        <input type="text" id="display-name" name="ip-display" placeholder="Name" required />
+        <input className="text-box" type="text" id="display-name" name="ip-display" placeholder="Name" required />
         <CallToAction label="Next" onClick={this._handleClick}/>
       </div>
     )
   }
 }
 
-export default Name
+const mapActionsToProps = dispatch => {
+  return bindActionCreators({
+    addName
+  },dispatch)
+}
+
+export default connect(null, mapActionsToProps)(Name)
