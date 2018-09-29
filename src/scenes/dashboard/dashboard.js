@@ -11,7 +11,7 @@ import './dashboard.css'
 class Dashboard extends Component {
   _selectChild = (child) => {
     this.props.selectChild(child)
-    this.props.history.push("charlie")
+    this.props.history.push("child")
   }
 
   render() {
