@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import YouTube from 'react-youtube';
 import NavBar from '../../components/navigation/NavBar';
 import CallToAction from '../../components/buttons/CallToAction';
 import './home.css'
@@ -14,6 +15,7 @@ class Home extends Component {
           </div>
         </section>
         <section className="section2">
+          <YouTube videoId='pOZL9KQIwKc'/>
           <div className="container">
             <h2>
               To start this process, you will need to begin
