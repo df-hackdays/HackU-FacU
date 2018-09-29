@@ -6,7 +6,9 @@ class NavBar extends Component {
   render() {
     return <header className="nav-wrapper container">
     <div className="nav-bar row col-md-12">
-      <h1 className="nav-logo">Logo</h1>
+      <div className="nav-logo">
+        <img class="siteNav-logo" src="https://www.canadalearningcode.ca/wp-content/uploads/clc-logo-1.svg" alt="clc logo"/>
+      </div>
       <ul className="nav-list">
         <li><Link to='/'>GUARDIAN</Link></li>
         <li><a href='https://www.canadalearningcode.ca/'>LEARN</a></li>

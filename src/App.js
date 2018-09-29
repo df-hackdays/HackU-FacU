@@ -9,13 +9,10 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
-          <NavBar/>
-          <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/other" component={Other}/>
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/other" component={Other}/>
+        </Switch>
       </HashRouter>
     );
   }
