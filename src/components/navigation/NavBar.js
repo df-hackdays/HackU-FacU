@@ -4,16 +4,17 @@ import './nav.css'
 
 class NavBar extends Component {
   render() {
-    return <header className="row">
-    <div>
+    return <header className="nav-wrapper container">
+    <div className="nav-bar row col-md-12">
+      <h1 className="nav-logo">Logo</h1>
       <ul className="nav-list">
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/'>Learn</Link></li>
-        <li><Link to='/'>Teach</Link></li>
-        <li><Link to='/other'>Volunteer</Link></li>
-        <li><Link to='/'>About</Link></li>
-        <li><Link to='/'>Donate</Link></li>
-        <li><Link to='/'>FR</Link></li>
+        <li><Link to='/'>GUARDIAN</Link></li>
+        <li><a href='https://www.canadalearningcode.ca/'>LEARN</a></li>
+        <li><a href='https://www.canadalearningcode.ca/'>TEACH</a></li>
+        <li><a href='https://www.canadalearningcode.ca/'>VOLUNTEER</a></li>
+        <li><a href='https://www.canadalearningcode.ca/'>ABOUT</a></li>
+        <li><a href='https://www.canadalearningcode.ca/'>DONATE</a></li>
+        <li><a className="fr-icon" href='https://www.canadalearningcode.ca/'>FR</a></li>
       </ul>
     </div>
     </header>

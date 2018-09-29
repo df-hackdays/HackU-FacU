@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 class Other extends Component {
   render() {
-    return <div>
+    return <div className="container">
       This is the other page
     </div>
   }
