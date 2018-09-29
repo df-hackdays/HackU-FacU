@@ -26,7 +26,10 @@ class Dashboard extends Component {
       <div className="dashboard-wrapper">
         <section className="section1">
           <div className="container">
-            <h1>Please select the student: </h1>
+            <h1>Please select a participating student
+              <br/> to see their accomplishments 
+              <br/> at the workshop
+            </h1>
             <div className="children-wrapper">
               {children}
             </div>
