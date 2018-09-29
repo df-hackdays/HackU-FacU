@@ -35,13 +35,30 @@ class ChildDetail extends Component {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
-        <h1>What is your child name?</h1>
-        <input type="text" id="display-name" name="ip-display" placeholder="Name" required />
-        <input type="text" id="display-name" name="ip-display" placeholder="Age" required />
-        <select>
-          <option value="Boy">Boy</option>
-          <option value="Girl">Girl</option>
-        </select>
+        <h1>Tell us some basic information about your child</h1>
+        <input className='inputs' type="text" id="display-name" name="ip-display" placeholder="Name" required />
+        <input className='inputs' type="text" id="display-name" name="ip-display" placeholder="Age" required />
+        <label className='selections'> Visible Minority Status <br/>
+          <select>
+            <option value="Asian">Asian</option>
+            <option value="Black">Black</option>
+            <option value="...">...</option>
+
+          </select>
+        </label>
+        <label className='selections'> Gender <br/>
+          <select>
+            <option value="Boy">Boy</option>
+            <option value="Girl">Girl</option>
+          </select>
+        </label>
+
+        <label className='selections'> Previous CLC engagements? <br/>
+          <select>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
         
         
         <CallToAction label="Next" onClick={this._handleClick}/>

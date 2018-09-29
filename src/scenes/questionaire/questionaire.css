@@ -12,3 +12,19 @@
   align-items: 100%;
   text-align: center;
 }
+
+.inputs {
+  height: 45px;
+  font-size: 30px;
+  padding:10px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.selections {
+  margin: 20px;
+  height: 30px;
+  text-align: center;
+}
