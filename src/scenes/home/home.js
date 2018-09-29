@@ -7,12 +7,20 @@ class Home extends Component {
   render() {
     return (<div>
       <NavBar/>
-      <div className="container home-wrapper">
-        <h1>Your chlid will be epowered to become a creator of technology</h1>
-        <h2>
-          To start this process, you will need to begin
-        </h2>
+      <div className="home-wrapper">
+        <section className="section1">
+          <div className="container">
+            <h1>Your child will be empowered to become a creator of technology</h1>
+          </div>
+        </section>
+        <section className="section2">
+          <div className="container">
+            <h2>
+              To start this process, you will need to begin
+            </h2>
+          </div>
         <CallToAction label="register" to="/questionaire"/>
+        </section>
       </div>
     </div>)
     

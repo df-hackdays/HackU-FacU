@@ -1,0 +1,14 @@
+.questionaire-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.questionaire-wrapper .logo {
+  position: absolute;
+  top: 50px;
+  align-items: 100%;
+  text-align: center;
+}
