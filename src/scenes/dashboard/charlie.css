@@ -1,0 +1,54 @@
+.intro{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top:10%;
+  height:80px;
+  font-size:42px;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: 2px;
+  width: auto;
+  padding-top:10px;
+  color: black;
+}
+
+.eventDetail{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top:10%;
+  height:80px;
+  font-size:42px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-top:10px;
+  color: black;
+}
+
+.eventRating{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top:10%;
+  height:80px;
+  font-size:42px;
+  text-align: center;
+  padding-top:10px;
+  color: black;
+}
+
+.eventImpact{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 5%;
+  margin-top:10%;
+  height:280px;
+  font-size:42px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding-top:10px;
+  color: black;
+}
