@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {updateChild} from '../../../actions/questionaire'
 
-class ChildDetail extends Component {
+class GenderDetail extends Component {
   constructor(props) {
     super(props)
 
@@ -23,11 +23,11 @@ class ChildDetail extends Component {
     }, 300)
   }
 
-  _handleClick = () => {
+  _handleClick = (value) => {
     this.setState({
       show:false
     })
-    this.props.updateChild("name", this.state.value)
+    this.props.updateChild("gender", value)
 
     if (this.props.callBack) {
       setTimeout(() => {
@@ -36,21 +36,34 @@ class ChildDetail extends Component {
     }
   }
 
-  _handleChange = (e) => {
-    this.setState({
-      value: e.target.value
-    })
-  }
-
   render () {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
-        <h1>Give your child a nickname</h1>
-        <input class="text-box" type="text" id="display-name" name="ip-display" placeholder="Name" value={this.state.value} onChange={this._handleChange} required />
-        <CallToAction label="Next" onClick={this._handleClick}/>
+        <h1>Please select the gender of <strong className="code-name">#{this.props.name}</strong></h1>
+        <div class="round-button-wrapper">
+          <button className="round-button" onClick={()=> this._handleClick("female")}>
+            FEMALE
+          </button>
+
+          <button className="round-button" onClick={()=> this._handleClick("male")}>
+            MALE
+          </button>
+
+          <button className="round-button" onClick={()=> this._handleClick("other")}>
+            OTHER
+          </button>
+        </div>
       </div>
     )
+  }
+}
+
+const mapStateTopProps = (state) => {
+  let children = state.questionaireReducer.children
+  console.log(children)
+  return {
+    name: children[children.length -1].name
   }
 }
 
@@ -60,4 +73,4 @@ const mapActionsToProps = (dispatch) => {
   }, dispatch)
 }
 
-export default connect(null, mapActionsToProps)(ChildDetail)
+export default connect(mapStateTopProps, mapActionsToProps)(GenderDetail)

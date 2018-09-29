@@ -24,13 +24,12 @@ export function questionaireReducer(state = defaultState, action) {
           id: id
         }
       )
-      console.log(children)
       return {
         ...state,
         children
       }
     case UPDATE_CHILD:
-      children[children.length - 1].name = action.name
+      children[children.length - 1][action.key] = action.value
       return {
         ...state,
         children

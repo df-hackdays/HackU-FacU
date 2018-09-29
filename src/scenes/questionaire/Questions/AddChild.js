@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import CallToAction from '../../../components/buttons/CallToActionOnPress'
+import CallToAction from '../../../components/buttons/CallToAction'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
 import {addChild} from '../../../actions/questionaire'
@@ -34,6 +34,14 @@ class AddChild extends Component {
     }
   }
 
+  _handleComplete = () => {
+    if (this.props.onComplete) {
+      setTimeout(() => {
+        this.props.onComplete()
+      }, 700)
+    }
+  }
+
   render () {
     let children = this.props.children ? this.props.children.map(
       (value, id) => {
@@ -41,6 +49,7 @@ class AddChild extends Component {
       }
     ) : null
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
+
     return (
       <div className={className}>
         <h1>Add a child</h1>
@@ -48,6 +57,7 @@ class AddChild extends Component {
         <button className="pill-button" onClick={this._handleClick}>
           +
         </button>
+        {this.props.children.length ? <CallToAction label="Done" to="/thankyou"/>: null}
       </div>
     )
   }

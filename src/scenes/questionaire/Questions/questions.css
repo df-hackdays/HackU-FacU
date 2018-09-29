@@ -12,11 +12,13 @@
   transition: 0.7s;
   opacity: 0;
   visibility: hidden; 
+  transform: translateX(5);
 }
 
 .show {
   opacity: 1;
   visibility: visible; 
+  transform: translateX(0);
 }
 
 .text-box {
@@ -40,3 +42,21 @@
   margin-bottom: 10px;
 }
 
+.round-button {    
+  height: 120px;
+  width: 120px;
+  border-radius: 100px;
+  font-size: 24px;
+  border: 2px black solid;
+  margin: 10px;
+}
+
+.round-button:hover {
+  cursor: pointer;
+  background-color: #eeeeee
+}
+
+.round-button-wrapper {
+  display: flex;
+  flex-direction: row;
+}

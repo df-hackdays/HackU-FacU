@@ -19,12 +19,13 @@ export function addChild() {
   }
 }
 
-export function updateChild(name) {
+export function updateChild(key, value) {
   return dispatch => {
     dispatch(
       {
         type: UPDATE_CHILD,
-        name: name
+        key: key,
+        value: value
       }
     )
   }

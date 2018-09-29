@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: center top;      
   background-size: cover;
+  text-align: center;
 }
 
 .questionaire-wrapper .logo {
@@ -31,4 +32,9 @@
   margin: 20px;
   height: 30px;
   text-align: center;
+}
+
+.code-name {
+  color: #ff0000;
+  text-transform: uppercase;
 }

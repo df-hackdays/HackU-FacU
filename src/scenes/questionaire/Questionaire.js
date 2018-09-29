@@ -4,8 +4,8 @@ import './questionaire.css'
 import AddChild from './Questions/AddChild';
 import ChildDetail from './Questions/ChildDetail';
 import Location from './Questions/Location';
-// import EventSelection from './Questions/EventSelection';
-
+import GenderDetail from './Questions/Gender';
+import Previous from './Questions/Previous';
 
 class Questionaire extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ class Questionaire extends Component {
   }
 
   _handleCallBack = () => {
-    let item = (this.state.stateNum + 1) % 5
+    let item = (this.state.stateNum + 1) % 7
     this.setState({
       stateNum: item
     }) 
@@ -34,8 +34,9 @@ class Questionaire extends Component {
       <Name callBack={this._handleCallBack}/>,
       <Location callBack={this._handleCallBack}/>,
       <AddChild callBack={this._handleCallBack}/>,
-      <ChildDetail callBack={this._handleAddChildDetail}/>,
-      // <EventSelection callBack={this._handleCallBack}/>,
+      <ChildDetail callBack={this._handleCallBack}/>,
+      <GenderDetail callBack={this._handleCallBack}/>,
+      <Previous callBack={this._handleAddChildDetail}/>,
     ]
     return <div className="questionaire-wrapper">
       <div className="logo">
