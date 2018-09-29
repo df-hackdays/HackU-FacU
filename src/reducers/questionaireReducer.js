@@ -1,4 +1,4 @@
-import {ADD_NAME, ADD_CHILD, UPDATE_CHILD} from '../actions/types'
+import {ADD_NAME, ADD_CHILD, UPDATE_CHILD, SELECT_CHILD} from '../actions/types'
 
 const defaultState = {
   name:'',
@@ -33,6 +33,11 @@ export function questionaireReducer(state = defaultState, action) {
       return {
         ...state,
         children
+      }
+    case SELECT_CHILD:
+      return {
+        ...state,
+        selected: action.name
       }
   }
   return state
