@@ -46,7 +46,7 @@ class ChildDetail extends Component {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
-        <h1>Give your child a nickname</h1>
+        <h1>What is your child's name?</h1>
         <input class="text-box" type="text" id="display-name" name="ip-display" placeholder="Name" value={this.state.value} onChange={this._handleChange} required />
         <CallToAction label="Next" onClick={this._handleClick}/>
       </div>

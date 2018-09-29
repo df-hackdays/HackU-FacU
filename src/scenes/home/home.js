@@ -11,17 +11,18 @@ class Home extends Component {
       <div className="home-wrapper">
         <section className="section1">
           <div className="container">
-            <h1>Your child will be empowered to become a creator of technology</h1>
+            <h1>Your child will be <br/>empowered to become a <br/>creator of technology</h1>
           </div>
         </section>
         <section className="section2">
-          <YouTube videoId='pOZL9KQIwKc'/>
+          <YouTube className="intro-video" videoId='pOZL9KQIwKc'/>
           <div className="container">
             <h2>
-              To start this process, you will need to begin
+              To start your child's journey with us,
+              <br/>we will ask you a few simple questions:
             </h2>
           </div>
-        <CallToAction label="register" to="/questionaire"/>
+        <CallToAction label="Let's Begin" to="/questionaire"/>
         </section>
       </div>
     </div>)

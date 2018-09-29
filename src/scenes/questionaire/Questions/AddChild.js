@@ -52,7 +52,8 @@ class AddChild extends Component {
 
     return (
       <div className={className}>
-        <h1>Add a child</h1>
+        <h1>Who will be participating
+          <br/> in this workshop?</h1>
         {children}
         <button className="pill-button" onClick={this._handleClick}>
           +

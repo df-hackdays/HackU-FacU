@@ -40,18 +40,19 @@ class GenderDetail extends Component {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
-        <h1>Please select the gender of <strong className="code-name">#{this.props.name}</strong></h1>
+        <h1>How does <strong className="code-name">{this.props.name}</strong> identify?</h1>
         <div class="round-button-wrapper">
           <button className="round-button" onClick={()=> this._handleClick("female")}>
             FEMALE
           </button>
-
           <button className="round-button" onClick={()=> this._handleClick("male")}>
             MALE
           </button>
-
           <button className="round-button" onClick={()=> this._handleClick("other")}>
             OTHER
+          </button>
+          <button className="round-button" onClick={()=> this._handleClick("other")}>
+            SKIP
           </button>
         </div>
       </div>

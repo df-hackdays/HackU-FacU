@@ -43,8 +43,8 @@ class Location extends Component {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
-        <h1>What is your Location?</h1>
-        <input className="text-box" type="text" id="display-name" name="ip-display" placeholder="Location" 
+        <h1>Where do you live?</h1>
+        <input className="text-box" type="text" id="display-name" name="ip-display" placeholder="Address" 
           value={this.state.value} onChange={this._onValueChange} required />
         <CallToAction label="Next" onClick={this._handleClick}/>
       </div>

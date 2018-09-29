@@ -40,8 +40,8 @@ class Previous extends Component {
     let className = `container question-wrapper fade-component ${this.state.show ? 'show': ''}`
     return (
       <div className={className}>
-        <h1>Has <strong className="code-name">#{this.props.name}</strong> participated 
-        <br/>in any previous courses with us?</h1>
+        <h1>Has <strong className="code-name">{this.props.name}</strong> participated 
+        <br/>in any previous workshops with us?</h1>
         <div class="round-button-wrapper">
           <button className="round-button" onClick={()=> this._handleClick(true)}>
             YES
